@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: ml-api
+    runtime: docker
+    region: oregon
+    plan: free
+    healthCheckPath: /docs
+    envVars:
+      - key: PORT
+        value: 8000
